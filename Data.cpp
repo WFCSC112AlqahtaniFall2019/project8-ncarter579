@@ -21,7 +21,7 @@ bool Data::operator<(const Data &rt) const {    //comparing two ratings
     return rt.rating < rating;
 }
 
-bool Data::operator>(const Data &rt) const {    //comparing two ratings    
+bool Data::operator>(const Data &rt) const {    //comparing two ratings
     return rt.rating > rating;
 }
 
