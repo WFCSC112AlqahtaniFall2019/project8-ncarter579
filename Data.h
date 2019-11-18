@@ -12,8 +12,8 @@ using namespace std;
 class Data{
 public:
     friend ostream& operator<<( ostream& os, const Data& d); //output stream overload operator
-    bool operator<(const Data &rt) const;     //overload operator
-    bool operator>(const Data &rt) const;
+    bool operator<(const Data &rt) const;     //overload operator for <
+    bool operator>(const Data &rt) const;    //overload operator for >
     Data(double point, double rebound, double assist, double rate);     //constructor
     Data(){};   //default constructor
 private:

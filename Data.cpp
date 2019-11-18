@@ -6,7 +6,7 @@ using namespace std;
 #include "Data.h"
 
 
-Data::Data(double points, double rebounds, double assists, double rate) {     //constructor for a Data object
+Data::Data(double points, double rebounds, double assists, double rate) {     //constructor for the Data object
     pointsPerGame = points;
     reboundsPerGame = rebounds;
     assistsPerGame = assists;
@@ -17,11 +17,11 @@ ostream &operator<<(ostream &os, const Data &d) {
     return os;
 }
 
-bool Data::operator<(const Data &rt) const {
+bool Data::operator<(const Data &rt) const {    //comparing two ratings
     return rt.rating < rating;
 }
 
-bool Data::operator>(const Data &rt) const {
+bool Data::operator>(const Data &rt) const {    //comparing two ratings    
     return rt.rating > rating;
 }
 
